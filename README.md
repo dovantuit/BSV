@@ -1,2 +1,4 @@
 # BSV
-Do an 1
+Đồ án 1
+
+Toàn bộ code Project của nhóm mình ở đây.
