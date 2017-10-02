@@ -1,0 +1,856 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="BanSacVietPro.MasterPage.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>BSV</title>
+      
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/bs/bootstrap-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/bs/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/bs/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/BSV.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/BSV.css"/>
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<script src="../JQuery/jquery.js"></script>
+	<script src="../JQuery/jssor.slider-26.1.5.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+        jssor_1_slider_init = function() {
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:500,$Delay:30,$Cols:8,$Rows:4,$Clip:15,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:2049,$Easing:$Jease$.$OutQuad},
+              {$Duration:500,$Delay:80,$Cols:8,$Rows:4,$Clip:15,$SlideOut:true,$Easing:$Jease$.$OutQuad},
+              {$Duration:1000,x:-0.2,$Delay:40,$Cols:12,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Assembly:260,$Easing:{$Left:$Jease$.$InOutExpo,$Opacity:$Jease$.$InOutQuad},$Opacity:2,$Outside:true,$Round:{$Top:0.5}},
+              {$Duration:2000,y:-1,$Delay:60,$Cols:15,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationStraight,$Easing:$Jease$.$OutJump,$Round:{$Top:1.5}},
+              {$Duration:1200,x:0.2,y:-0.1,$Delay:20,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:260,$Easing:{$Left:$Jease$.$InWave,$Top:$Jease$.$InWave,$Clip:$Jease$.$OutQuad},$Round:{$Left:1.3,$Top:2.5}}
+            ];
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            /*#region responsive code begin*/
+            var MAX_WIDTH = 980;
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+                if (containerWidth) {
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    /******************************************************/
+        function searchToggle(obj, evt) {
+            var container = $(obj).closest('.search-wrapper');
+
+            if (!container.hasClass('active')) {
+                container.addClass('active');
+                evt.preventDefault();
+            }
+            else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
+                container.removeClass('active');
+                // clear input
+                container.find('.search-input').val('');
+                // clear and hide result container when we press close
+                container.find('.result-container').fadeOut(100, function () { $(this).empty(); });
+            }
+        }
+    /*****************************************************/
+            $(document).ready(function() {
+                    // BEGIN SHOW/HIDE SHARE BUTTONS
+            $('.ttw-share-activate-button').on('click', function(e) {
+            e.preventDefault();
+                /* touchstart events */
+                if($('.social-share-wrapper').hasClass('social-share-wrapper-active'))
+                {
+                    /* hide share buttons */
+                    $(".social-share-wrapper").removeClass("social-share-wrapper-active");
+         
+                    /* remove shadow */
+                    $(".social-share-wrapper").removeClass("social-share-wrapper-shadow");
+                    /* hide arrow */
+                    $(".ttw-share-arrow").removeClass("ttw-share-arrow-active");
+                    /* hide menu button active colors */
+                    $(".ttw-share-activate-button").removeClass("ttw-share-activate-button-active");
+                    $(".ttw-share-activate-button").toggleClass("ttw-share-activate-button-hover");
+                    $(".ttw-share-activate-button").removeClass("ttw-share-activate-button-hover-touch");
+                } else {
+                    /* show share buttons */
+                    $(".social-share-wrapper").addClass("social-share-wrapper-active");
+         
+                    /* show shadow */
+                    setTimeout(function(){
+                        $(".social-share-wrapper").addClass("social-share-wrapper-shadow");
+                    },150);
+                    /* show arrow */
+                    $(".ttw-share-arrow").addClass("ttw-share-arrow-active");
+                }
+            });
+            // END SHOW/HIDE SHARE BUTTONS
+            }); 
+    </script>
+    <style>
+	    #check{
+			height:150px;
+			margin-top:70px;
+            padding-bottom:70px;
+		}
+
+		#search{
+			margin-left:100px;
+		}
+
+		#see{
+            margin-top:100px;
+			background-image:url(../img/room.jpg);
+			background-size:cover;
+			text-align:center;
+		}
+    /******************/
+    /* bootstrap*/
+     /* jssor slider loading skin spin css */
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .jssorb053 .i {position:absolute;cursor:pointer;}
+        .jssorb053 .i .b {fill:#fff;fill-opacity:0.5;}
+        .jssorb053 .i:hover .b {fill-opacity:.7;}
+        .jssorb053 .iav .b {fill-opacity: 1;}
+        .jssorb053 .i.idn {opacity:.3;}
+
+        .jssora093 {display:block;position:absolute;cursor:pointer;}
+        .jssora093 .c {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+        .jssora093 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;}
+        .jssora093:hover {opacity:.8;}
+        .jssora093.jssora093dn {opacity:.6;}
+        .jssora093.jssora093ds {opacity:.3;pointer-events:none;}
+        .bootstrap{
+            width:100%;
+
+        }
+/*****************************/
+    /******** button Search **************/
+        .search-wrapper .input-holder {    
+            height: 70px;
+            width:70px;
+            overflow: hidden;
+            background: rgba(255,255,255,0);
+            border-radius:6px;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+        }
+        .search-wrapper.active .input-holder {
+            width:450px;
+            border-radius: 50px;
+            background: rgba(0,0,0,0.5);
+            transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+        }
+        .search-wrapper .input-holder .search-input {
+            width:100%;
+            height: 50px;
+            padding:0px 70px 0 20px;
+            opacity: 0;
+            position: absolute;
+            top:0px;
+            left:0px;
+            background: transparent;
+            box-sizing: border-box;
+            border:none;
+            outline:none;
+            font-family:"Open Sans", Arial, Verdana;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            color:#FFF;
+            transform: translate(0, 60px);
+            transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+            transition-delay: 0.3s;
+        }
+        .search-wrapper.active .input-holder .search-input {
+            opacity: 1;
+            transform: translate(0, 10px);
+            margin:unset;
+        }
+        .search-wrapper .input-holder .search-icon {
+            width:70px;
+            height:70px;
+            border:none;
+            border-radius:6px;
+            background: #FFF;
+            padding:0px;
+            outline:none;
+            position: relative;
+            z-index: 2;
+            float:right;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .search-wrapper.active .input-holder .search-icon {
+            width: 50px;
+            height:50px;
+            margin: 10px;
+            border-radius: 30px;
+        }
+        .search-wrapper .input-holder .search-icon span {
+            width:22px;
+            height:22px;
+            display: inline-block;
+            vertical-align: middle;
+            position:relative;
+            transform: rotate(45deg);
+            transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+        }
+        .search-wrapper.active .input-holder .search-icon span {
+            transform: rotate(-45deg);
+        }
+        .search-wrapper .input-holder .search-icon span::before, .search-wrapper .input-holder .search-icon span::after {
+            position: absolute; 
+            content:'';
+        }
+        .search-wrapper .input-holder .search-icon span::before {
+            width: 4px;
+            height: 11px;
+            left: 9px;
+            top: 18px;
+            border-radius: 2px;
+            background: #FE5F55;
+        }
+        .search-wrapper .input-holder .search-icon span::after {
+            width: 14px;
+            height: 14px;
+            left: 0px;
+            top: 0px;
+            border-radius: 16px;
+            border: 4px solid #FE5F55;
+        }
+        .search-wrapper .close {
+            position: absolute;
+            z-index: 1;
+            top:24px;
+            right:20px;
+            width:25px;
+            height:25px;
+            cursor: pointer;
+            transform: rotate(-180deg);
+            transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+            transition-delay: 0.2s;
+        }
+        .search-wrapper.active .close {
+            right:-50px;
+            transform: rotate(45deg);
+            transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+            transition-delay: 0.5s;
+        }
+        .search-wrapper .close::before, .search-wrapper .close::after {
+            position:absolute;
+            content:'';
+            background: #FE5F55;
+            border-radius: 2px;
+        }
+        .search-wrapper .close::before {
+            width: 5px;
+            height: 25px;
+            left: 10px;
+            top: 0px;
+        }
+        .search-wrapper .close::after {
+            width: 25px;
+            height: 5px;
+            left: 0px;
+            top: 10px;
+        }
+        .search-wrapper {
+            margin-left:350px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top:50%;
+            left:50%;
+        }
+        .search-wrapper.active {}
+
+        /************ACTIVATION BUTTON ***************/
+        .ttw-share-activate-button {
+  min-width:50px;
+  cursor:pointer;
+  text-align:right;
+  position:fixed;
+  z-index:999999;
+  right:77px;
+  bottom:73px;
+  text-decoration:none !important;
+  font-weight:700;
+  font-size:12pt;
+  /* activation button label */
+  color:#FE5F55;
+   
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+   
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+   
+  /* remove the flickering effect of a tapped link/button when on a touch device */
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+ 
+ 
+/* show activation button when scrolled down (if active) */
+.ttw-share-activate-button-visible {
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  transform: translateY(100px);
+}
+.share-desc {
+  display:inline-block;
+  position:relative;
+  bottom:5px;
+}
+/* activation button icon initial position */
+.ttw-share-activate-button i {
+  font-size:28px;
+  margin:0 0 0 10px;
+  color:#FE5F55;
+   
+  -webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  transform:rotate(0deg);
+}
+/* activation button icon hover color */
+.ttw-share-activate-button-active i,
+.ttw-share-activate-button:hover i {
+  color:#A9AFB4;
+   
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+} 
+/* activation button animation */
+.ttw-share-activate-button-active i {
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  transform:rotate(180deg);
+   
+  -webkit-transition: -webkit-transform .5s ease, color .1s ease;
+  -moz-transition: -moz-transform .5s ease, color .1s ease;
+  transition: transform .5s ease, color .1s ease;
+}
+ 
+ 
+/* THE ARROW **************************************************/
+.ttw-share-arrow {
+  width:0;
+  height:0;
+  margin:0 auto !important;
+  border-left:5px solid transparent;
+  border-right:5px solid transparent;
+  bottom: 107px !important;
+  right: 84px;
+  display:none;
+   
+  /* tooltip color */
+  border-top:5px solid #5A5A5A;
+   
+  position:fixed;
+  z-index:999999;
+}
+.ttw-share-arrow-active {
+  display:inline;
+  opacity:1 !important;
+   
+   
+  -webkit-transform: translateY(0px) !important;
+  -moz-transform: translateY(0px) !important;
+  transform: translateY(0px) !important;
+}
+ 
+ 
+/* Twitter, Facebook, GooglePlus button joint properties
+**************************************************/
+.social-share-wrapper {
+  position:fixed;
+  z-index:999999;
+  overflow:hidden;
+  font-size:20px;
+  text-align:center;
+  width:56px;
+  margin:0 0 15px 0;
+  padding:unset;
+  opacity:0;
+  right:-100%;
+  bottom:65px;
+}
+.social-share-wrapper-active {
+  opacity: 1 !important;
+  right: 64px;
+  bottom: 97px;
+}
+/* the shadow */
+.social-share-wrapper-shadow {
+  -webkit-transition: -webkit-box-shadow 1s ease;
+  -moz-transition: -moz-box-shadow 1s ease;
+  transition: box-shadow 1s ease;
+ 
+  /* share buttons shadow size and color */
+  -moz-box-shadow: 0 0 20px 1px rgba(0,0,0,.1);
+  -webkit-box-shadow: 0 0 20px 1px rgba(0,0,0,.1);
+  box-shadow: 0 0 20px 1px rgba(0,0,0,.1);
+}
+.social-share-wrapper li {
+  list-style-type:none;
+  background:#fff;
+  /* button separator color */
+  border-top:1px solid #E0E0E0;
+}
+ 
+/* disable top border on first item */
+.social-share-wrapper li:first-child {
+  border-top:none !important;
+   
+  /* create top left rounded corner for first item */
+  -webkit-border-top-left-radius:2px;
+  -moz-border-top-left-radius:2px;
+  border-top-left-radius:2px;
+   
+  /* create top right rounded corner for first item */
+  -webkit-border-top-right-radius:2px;
+  -moz-border-top-right-radius:2px;
+  border-top-right-radius:2px;
+}
+/* first child (from the top) */
+.social-share-wrapper li:nth-last-child(5) {
+  /* disable top border on first item */
+  border-top:none !important;
+   
+  -webkit-transform: translateY(275px) scale(0.1);
+  -moz-transform: translateY(275px) scale(0.1);
+  transform: translateY(275px) scale(0.1);
+   
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+/* second child (from the top) */
+.social-share-wrapper li:nth-last-child(4) {
+  -webkit-transform: translateY(200px) scale(0.25);
+  -moz-transform: translateY(200px) scale(0.25);
+  transform: translateY(200px) scale(0.25);
+   
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  transition: all .4s ease;
+}
+/* third child (from the top) */
+.social-share-wrapper li:nth-last-child(3) {
+  -webkit-transform: translateY(125px) scale(0.5);
+  -moz-transform: translateY(125px) scale(0.5);
+  transform: translateY(125px) scale(0.5);
+   
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+/* fourth child (from the top) */
+.social-share-wrapper li:nth-last-child(2) {
+  -webkit-transform: translateY(75px) scale(0.8);
+  -moz-transform: translateY(75px) scale(0.8);
+  transform: translateY(75px) scale(0.8);
+   
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  transition: all .2s ease;
+}
+/* fifth child (from the top) */
+.social-share-wrapper li:nth-last-child(1) {
+  -webkit-transform: translateY(25px) scale(1);
+  -moz-transform: translateY(25px) scale(1);
+  transform: translateY(25px) scale(1);
+   
+  -webkit-transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  transition: all .1s ease;
+}
+ 
+/* all children active */
+.social-share-wrapper-active li {
+  -webkit-transform: translateY(0) scale(1) !important;
+  -moz-transform: translateY(0) scale(1) !important;
+  transform: translateY(0) scale(1) !important;
+}
+ 
+.social-share-wrapper li:last-child {
+  /* tooltip color */
+  border-bottom:4px solid #5A5A5A;
+}
+ 
+ 
+/* SHARED BUTTON STYLES
+**************************************************/
+.ttw-twitter-button,
+.ttw-facebook-button,
+.ttw-googleplus-button,
+.ttw-tumblr-button,
+.ttw-email-button {
+  display:block;
+  width:100%;
+  color:#A5ACB4;
+  padding:15px 0 15px 0;
+   
+  -webkit-transition: all 0s ease;
+  -moz-transition: all 0s ease;
+  transition: all 0s ease;
+}
+ 
+.ttw-twitter-button:hover,
+.ttw-facebook-button:hover,
+.ttw-googleplus-button:hover,
+.ttw-tumblr-button:hover,
+.ttw-email-button:hover {
+  color:#fff;
+  background:#FF543B;
+   
+  -webkit-transition: all 0s ease;
+  -moz-transition: all 0s ease;
+  transition: all 0s ease;
+}
+        /********footer********/
+
+        .home-icon {
+            position: relative;
+        }
+ 
+        .home-icon:before {
+            content: "\f015";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        /*--adjust as necessary--*/
+            color: #fff;
+            font-size: 18px;
+            padding-right: 0.5em;
+            
+        }
+        
+        .envelope-icon {
+        position: relative;
+        }
+ 
+        .envelope-icon:before {
+            content: "\f003";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        /*--adjust as necessary--*/
+            color: #fff;
+            font-size: 18px;
+            padding-right: 0.5em;
+          
+        }
+
+        .phone-icon {
+        position: relative;
+        }
+ 
+        .phone-icon:before {
+            content: "\f095";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        /*--adjust as necessary--*/
+            color: #fff;
+            font-size: 18px;
+            padding-right: 0.5em;
+       
+        }
+        
+        .map-marker-icon {
+        position: relative;
+        }
+ 
+        .map-marker-icon:before {
+            content: "\f041";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        /*--adjust as necessary--*/
+            color: #fff;
+            font-size: 18px;
+            padding-right: 0.5em;
+        }
+        /*********** footer-master *********/
+        #up-footer{
+            float:left;
+            display:block;
+        }
+        #down-footer{
+            width:97%;
+            float:left;
+            display:block; 
+            background-color:#5A5A5A;
+            color:#E0E0E0;
+            padding:20px;
+        }
+        #footer-master{
+            width:300px;
+            float:left;
+        }
+        #footer-master ul{
+            list-style-type:none;
+            width:150px;
+            float:left;
+            text-align:left;
+            margin-left:40px;
+        }
+        #footer-master ul li{
+            width:200px;
+            padding:10px;
+            float:left;
+            color:white;
+        }
+         #footer-Awards{
+            width:300px;
+            float:left;
+        }
+        #footer-Awards ul{
+            list-style-type:none;
+            width:150px;
+            float:left;
+            text-align:left;
+            margin-left:40px;
+        }
+        #footer-Awards ul li{
+            width:200px;
+            padding:10px;
+            float:left;
+            color:white;
+        }
+         #footer-AboutUs{
+            width:300px;
+            float:left;
+            text-align:left;
+        }
+        #footer-AboutUs ul{
+            list-style-type:none;
+            width:150px;
+            float:left;
+            margin-left:40px;
+        }
+        #footer-AboutUs ul li{
+            width:200px;
+            padding:10px 10px 0 0;
+            float:left;
+            color:white;
+
+        }
+         #footer-AboutUs ul li a{
+            color:#E0E0E0;
+            text-decoration:none;
+        }
+         #footer-AboutUs ul li a:hover{
+            color:#fff;
+            text-decoration:none;
+        }
+        .right-icon {
+        position: relative;
+        }
+ 
+        .right-icon:before {
+            content: "\f105";
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+        /*--adjust as necessary--*/
+            color: #fff;
+            font-size: 18px;
+            padding-right: 0.5em;
+        }
+      
+	</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div> <header>
+		<a href="#"><img src="../img/global.jpg" height="200px" width="400px"></a>
+	</header>
+	
+	<nav id="fixNav">
+	  <ul>
+		<li><a href="../Page/Home.aspx">Home</a></li>
+		<li>
+			<a href="#">Tour Trong Nước</a>
+			<ul class="sub-menu">
+				<li><a href="Mienbac.aspx">Miền Bắc</a></li>
+				<li><a href="Mientrung.aspx">Miền Trung</a></li>
+				<li><a href="Miennam.aspx#">Miền Nam</a></li>
+			 </ul>
+		</li>
+		<li>
+			<a href="#">Tour Ngoài Nước</a>
+			<ul class="sub-menu">
+				<li><a href="Chaua.aspx">Châu Á</a></li>
+				<li><a href="Chaumy.aspx">Châu Mỹ</a></li>
+				<li><a href="Chauau.aspx">Châu Âu</a></li>
+				<li><a href="Chauphi.aspx">Châu Phi</a></li>
+				<li><a href="Chauuc.aspx">Châu Úc</a></li>
+			 </ul>
+		</li>
+		<li><a href="../Page/Login.aspx">Login</a></li>
+		<li><a href="#">About Us</a></li>
+	  </ul>
+        <div class="search-wrapper">
+             <div class="input-holder">
+                 <input type="text" class="search-input" placeholder="Type to search" />
+                  <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+            </div>
+        <span class="close" onclick="searchToggle(this, event);"></span>
+        </div>
+	</nav>
+	<section>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+          </asp:ContentPlaceHolder>
+	</section>
+    <!--end header-->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+    <!--begin footer-->
+	<footer>
+        <div id="up-footer">
+    <!-- Master -->
+        <div id="footer-master">
+            <h1 style="font-size:14pt;margin-left:50px;color:white;"> Contact</h1>
+            <ul>
+                <li><i class="home-icon"></i>: 123 ABC </li>
+                <li><i class="envelope-icon"></i>: iuh@gmail.com</li>
+                <li><i class="phone-icon"></i>: 0123456789</li>
+                <li><i class="map-marker-icon"></i>: 123 ABC</li>
+            </ul>
+        </div>
+    <!-- About Us -->
+         <div id="footer-AboutUs">
+              <h1 style="font-size:14pt;margin-left:50px;color:white;"> About Us</h1>
+             <ul>
+                <li><a href="#"><i class="right-icon"></i> Cảnh Báo</a></li> <hr />
+                <li><a href="#"><i class="right-icon"></i> Dịch Vụ</a></li> <hr />
+                <li><a href="#"><i class="right-icon"></i> Điều Khoảng</a></li> <hr />
+                <li><a href="#"><i class="right-icon"></i> Hỏi Đáp</a></li> <hr />
+            </ul>
+        </div>
+            <div id="footer-Awards"> 
+                <h1 style="font-size:14pt;margin-left:50px;color:white;"> Awards</h1>
+                <ul>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li> 
+                    <li>...</li>
+                </ul>
+            </div>
+        </div>
+        <div id="down-footer">
+            Copyright 2017 All Team 15
+            <i style="float:right;font-family:'Times New Roman';font-size:12pt;"> Power by Nhóm 15</i>
+        </div>
+
+        <!-- BEGIN ARROW -->
+        <div class="ttw-share-arrow"></div>
+        <!-- END ARROW -->
+ 
+        <!-- BEGIN ACTIVATION BUTTON -->
+        <div class="ttw-share-activate-button ">
+            <div class="share-desc"> </div>    
+            <i class="fa  fa-plus-circle"></i>
+        </div>
+        <!-- END ACTIVATION BUTTON -->
+ 
+        <!-- BEGIN BUTTONS WRAPPER -->
+        <ul class="social-share-wrapper">
+ 
+        <!-- BEGIN TWITTER BUTTON -->
+        <li>
+            <a class="ttw-twitter-button" target="_blank" href="#">
+                <i class="fa fa-twitter"></i>
+            </a>
+                </li>
+        <!-- END TWITTER BUTTON -->
+ 
+        <!-- BEGIN FACEBOOK BUTTON -->
+        <li>
+           <a class="ttw-facebook-button" target="_blank" href="#">
+               <i class="fa fa-facebook"></i>
+            </a>
+        </li>
+        <!-- END FACEBOOK BUTTON -->
+ 
+        <!-- BEGIN GOOGLEPLUS BUTTON -->
+        <li>
+            <a class="ttw-googleplus-button" target="_blank" href="#">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <!-- END GOOGLEPLUS BUTTON -->
+ 
+        <!-- BEGIN TUMBLR BUTTON -->
+        <li>
+            <a class="ttw-tumblr-button" target="_blank" href="#">
+                <i class="fa fa-tumblr"></i>
+            </a>
+        </li>
+        <!-- END TUMBLR BUTTON -->
+ 
+        <!-- BEGIN EMAIL BUTTON -->
+        <li>
+            <a class="ttw-email-button" href="#">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </li>
+        <!-- END EMAIL BUTTON -->
+        </ul>
+    <!-- END BUTTONS WRAPPER -->
+	</footer>
+
+      
+    </div>
+    </form>
+</body>
+</html>

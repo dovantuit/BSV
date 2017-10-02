@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="BanSacViet" Class="DataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-QEHEMEM;Initial Catalog=BanSacViet;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BanSacVietConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Bantin" Member="Bantins">
+    <Type Name="Bantin">
+      <Column Name="IDbantin" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="noiDung" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Bantin_Chitiet" Member="Chitiets" ThisKey="IDbantin" OtherKey="IDbantin" Type="Chitiet" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Chitiet" Member="Chitiets">
+    <Type Name="Chitiet">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="noiDung" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="lanXem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ngaydang" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IDbantin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Bantin_Chitiet" Member="Bantin" ThisKey="IDbantin" OtherKey="IDbantin" Type="Bantin" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DangNhap" Member="DangNhaps">
+    <Type Name="DangNhap">
+      <Column Name="IDName" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="passWord" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.chiTiet_update" Method="chiTiet_update">
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="noiDung" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Bantin_Delete" Method="Bantin_Delete">
+    <Parameter Name="IDbanTin" Parameter="iDbanTin" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Bantin_Insert" Method="Bantin_Insert">
+    <Parameter Name="noiDung" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Bantin_Select" Method="Bantin_Select">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Bantin_SelectResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="noiDung" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="lanXem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ngaydang" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IDbantin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Bantin_SelectAll" Method="Bantin_SelectAll">
+    <ElementType Name="Bantin_SelectAllResult">
+      <Column Name="IDbantin" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="noiDung" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Bantin_Update" Method="Bantin_Update">
+    <Parameter Name="noiDung" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="IDbanTin" Parameter="iDbanTin" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.chiTiet_insert" Method="chiTiet_insert">
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="noiDung" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="ngaydang" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="IDbanTin" Parameter="iDbanTin" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.chiTiet_SelectAll" Method="chiTiet_SelectAll">
+    <ElementType Name="chiTiet_SelectAllResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="noiDung" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="lanXem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ngaydang" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IDbantin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Chitiet_SelectID" Method="Chitiet_SelectID">
+    <Parameter Name="IDbanTin" Parameter="iDbanTin" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Chitiet_SelectIDResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="noiDung" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="lanXem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ngaydang" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IDbantin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.chiTiet_SLX" Method="chiTiet_SLX">
+    <Parameter Name="lanXem" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

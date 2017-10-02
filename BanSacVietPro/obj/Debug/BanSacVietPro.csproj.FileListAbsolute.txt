@@ -1,0 +1,185 @@
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\obj\Debug\BanSacVietPro.csprojResolveAssemblyReference.cache
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ApplicationInsights.config
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\csc.exe
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.CodeAnalysis.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.CSharp.Core.targets
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.VisualBasic.Core.targets
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\System.Collections.Immutable.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\System.Reflection.Metadata.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\vbc.exe
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\VBCSCompiler.exe
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\roslyn\VBCSCompiler.exe.config
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\BanSacVietPro.dll.config
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\BanSacVietPro.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\BanSacVietPro.pdb
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.Agent.Intercept.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.DependencyCollector.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.PerfCounterCollector.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.ServerTelemetryChannel.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.Web.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.WindowsServer.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.ApplicationInsights.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.DependencyCollector.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.ServerTelemetryChannel.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.Web.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.WindowsServer.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.ApplicationInsights.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\obj\Debug\BanSacVietPro.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\obj\Debug\BanSacVietPro.pdb
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\EntityFramework.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\EntityFramework.SqlServer.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\EntityFramework.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\EntityFramework.SqlServer.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\AjaxControlToolkit.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.WindowsAzure.Storage.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\HtmlAgilityPack.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\AjaxMin.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.Data.OData.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.Data.Edm.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\System.Spatial.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\AjaxControlToolkit.pdb
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.WindowsAzure.Storage.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.Data.OData.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\Microsoft.Data.Edm.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\System.Spatial.xml
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ar\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\cs\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\de\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\es\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\fr\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\he\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\hi\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\it\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ja\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ko\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\nl\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\pl\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\pt\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ru\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\tr-TR\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\zh-CHS\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\zh-CHT\AjaxControlToolkit.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\de\Microsoft.Data.OData.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\es\Microsoft.Data.OData.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\fr\Microsoft.Data.OData.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\it\Microsoft.Data.OData.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ja\Microsoft.Data.OData.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ko\Microsoft.Data.OData.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ru\Microsoft.Data.OData.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\de\Microsoft.Data.Edm.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\es\Microsoft.Data.Edm.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\fr\Microsoft.Data.Edm.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\it\Microsoft.Data.Edm.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ja\Microsoft.Data.Edm.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ko\Microsoft.Data.Edm.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ru\Microsoft.Data.Edm.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\de\System.Spatial.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\es\System.Spatial.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\fr\System.Spatial.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\it\System.Spatial.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ja\System.Spatial.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ko\System.Spatial.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\ru\System.Spatial.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\zh-Hans\System.Spatial.resources.dll
+e:\e\visual studio 2015\Projects\BanSacVietSlu\BanSacVietPro\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ApplicationInsights.config
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\csc.exe
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\vbc.exe
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\BanSacVietPro.dll.config
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\BanSacVietPro.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\BanSacVietPro.pdb
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\EntityFramework.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\EntityFramework.SqlServer.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.Web.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\HtmlAgilityPack.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\AjaxMin.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.Data.OData.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.Data.Edm.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\System.Spatial.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\AjaxControlToolkit.pdb
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\EntityFramework.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\EntityFramework.SqlServer.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.Web.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.Data.OData.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\Microsoft.Data.Edm.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\System.Spatial.xml
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\pl\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\de\System.Spatial.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\es\System.Spatial.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\fr\System.Spatial.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\it\System.Spatial.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ja\System.Spatial.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ko\System.Spatial.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\ru\System.Spatial.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\obj\Debug\BanSacVietPro.csprojResolveAssemblyReference.cache
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\obj\Debug\BanSacVietPro.dll
+C:\Users\Tom\Desktop\BanSacVietSlu\BanSacVietSlu\BanSacVietPro\obj\Debug\BanSacVietPro.pdb
